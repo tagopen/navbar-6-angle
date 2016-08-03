@@ -43,13 +43,20 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>  
+  <body>
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
         <div class="navbar">
-          <p>мастер merged</p>
+<<<<<<< HEAD
+          <p>текст</p>
+=======
+          <p>мастер</p>
+>>>>>>> master
         </div>
       </div>
     </div>
