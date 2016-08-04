@@ -117,66 +117,209 @@
 /* ---------------------------------------- */
 .navbar-poly {
   position: relative;
-  width: 1184px;
-  height: 1356px;
+  width: 414.4px;
+  height: 474.6px;
   margin-top: 117px;
   margin-bottom: 117px;
 }
+.navbar-poly__link {
+  color: #fff;
+}
+.navbar-poly__link:hover, .navbar-poly__link:focus {
+  color: #fff;
+  text-decoration: none;
+}
 .navbar-poly__item {
   position: absolute;
-  font-size: 40px;
-  line-height: 40px;
+  display: block;
+  width: 330px;
+  height: 280px;
+  font-size: 0;
+  line-height: 288px;
   text-align: center;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
-.navbar-poly__item--trapeze {
-  width: 672px;
-  height: 288px;
+.navbar-poly__item:hover {
+  z-index: 10;
 }
-.navbar-poly__item--6angle {
-  width: 572px;
-  height: 332px;
-  top: 345px;
-  left: 312px;
-  margin: 0 auto;
-  background-color: #00712d;
-}
-.navbar-poly__item--6angle:before, .navbar-poly__item--6angle:after {
+.navbar-poly__item:before, .navbar-poly__item:after {
   content: "";
-  width: 572px;
-  height: 332px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00712d;
+  background-color: inherit;
 }
-.navbar-poly__item--6angle:before {
+.navbar-poly__item:before {
+  -webkit-transform: skewX(30deg);
+  -moz-transform: skewX(30deg);
+  -ms-transform: skewX(30deg);
+  -o-transform: skewX(30deg);
+  transform: skewX(30deg);
+  left: -83px;
+}
+.navbar-poly__item:after {
+  -webkit-transform: skewX(-30deg);
+  -moz-transform: skewX(-30deg);
+  -ms-transform: skewX(-30deg);
+  -o-transform: skewX(-30deg);
+  transform: skewX(-30deg);
+  right: -83px;
+  left: auto;
+}
+.navbar-poly__item--center {
+  width: 566px;
+  height: 326px;
+  top: 510px;
+  left: 304px;
+  background-color: #00712d;
+  line-height: 332px;
+}
+.navbar-poly__item--center:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  transform: scale(1.25);
+}
+.navbar-poly__item--center:before, .navbar-poly__item--center:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+.navbar-poly__item--center:before {
   -ms-transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   transform: rotate(60deg);
 }
-.navbar-poly__item--6angle:after {
+.navbar-poly__item--center:after {
   -ms-transform: rotate(-60deg);
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
 }
-.navbar-poly__link {
-  font-size: 0;
-  line-height: 288px;
-  color: #fff;
-  text-transform: uppercase;
+.navbar-poly__item--1 {
+  top: 146px;
+  left: 200px;
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  background-color: #cd0053;
 }
-.navbar-poly__link--6angle {
-  line-height: 332px;
+.navbar-poly__item--1:hover {
+  -webkit-transform: rotate(-30deg) scale(1.25);
+  -moz-transform: rotate(-30deg) scale(1.25);
+  -ms-transform: rotate(-30deg) scale(1.25);
+  -o-transform: rotate(-30deg) scale(1.25);
+  transform: rotate(-30deg) scale(1.25);
 }
-.navbar-poly__link:hover {
-  color: #fff;
-  text-decoration: none;
+.navbar-poly__item--2 {
+  top: 148px;
+  left: 646px;
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  background-color: #ea7917;
+}
+.navbar-poly__item--2:hover {
+  -webkit-transform: rotate(30deg) scale(1.25);
+  -moz-transform: rotate(30deg) scale(1.25);
+  -ms-transform: rotate(30deg) scale(1.25);
+  -o-transform: rotate(30deg) scale(1.25);
+  transform: rotate(30deg) scale(1.25);
+}
+.navbar-poly__item--3 {
+  top: 530px;
+  left: -24px;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background-color: #ecb500;
+}
+.navbar-poly__item--3:hover {
+  -webkit-transform: rotate(-90deg) scale(1.25);
+  -moz-transform: rotate(-90deg) scale(1.25);
+  -ms-transform: rotate(-90deg) scale(1.25);
+  -o-transform: rotate(-90deg) scale(1.25);
+  transform: rotate(-90deg) scale(1.25);
+}
+.navbar-poly__item--4 {
+  top: 531px;
+  left: 869px;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #ca0426;
+}
+.navbar-poly__item--4:hover {
+  -webkit-transform: rotate(90deg) scale(1.25);
+  -moz-transform: rotate(90deg) scale(1.25);
+  -ms-transform: rotate(90deg) scale(1.25);
+  -o-transform: rotate(90deg) scale(1.25);
+  transform: rotate(90deg) scale(1.25);
+}
+.navbar-poly__item--5 {
+  top: 921px;
+  left: 200px;
+  -ms-transform: rotate(210deg);
+  -webkit-transform: rotate(210deg);
+  transform: rotate(210deg);
+  background-color: #8d2a78;
+}
+.navbar-poly__item--5:hover {
+  -webkit-transform: rotate(210deg) scale(1.25);
+  -moz-transform: rotate(210deg) scale(1.25);
+  -ms-transform: rotate(210deg) scale(1.25);
+  -o-transform: rotate(210deg) scale(1.25);
+  transform: rotate(210deg) scale(1.25);
+}
+.navbar-poly__item--6 {
+  top: 921px;
+  left: 646px;
+  -ms-transform: rotate(-210deg);
+  -webkit-transform: rotate(-210deg);
+  transform: rotate(-210deg);
+  background-color: #35a4af;
+}
+.navbar-poly__item--6:hover {
+  -webkit-transform: rotate(-210deg) scale(1.25);
+  -moz-transform: rotate(-210deg) scale(1.25);
+  -ms-transform: rotate(-210deg) scale(1.25);
+  -o-transform: rotate(-210deg) scale(1.25);
+  transform: rotate(-210deg) scale(1.25);
 }
 .navbar-poly__text {
   position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 135%;
+  left: -60px;
+  right: -60px;
+  font: 600 40px/50px sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  word-wrap: break-word;
   z-index: 9;
-  font-size: 40px;
-  line-height: 40px;
+}
+.navbar-poly__text--center {
+  width: auto;
+  left: auto;
+  right: auto;
+}
+.navbar-poly__text--1 {
+  font-size: 61px;
+  line-height: 61px;
+}
+.navbar-poly__text--5, .navbar-poly__text--6 {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }

@@ -5,50 +5,122 @@
 
 .navbar-poly
   position: relative
-  width: 1184px
-  height: 1356px
+  width: 1184px * .35
+  height: 1356px * .35
   margin: 
     top: 117px
     bottom: 117px
-  
+  &__link
+    color: #fff
+    &:hover,
+    &:focus
+      color: #fff
+      text-decoration: none
   &__item
     position: absolute
-    font-size: 40px
-    line-height: 40px
+    display: block
+    width: 330px
+    height: 280px
+    font-size: 0
+    line-height: 288px
     text-align: center
-    &--trapeze
-      width: 672px
-      height: 288px
-    &--6angle
-      width: 572px
-      height: 332px
-      top: 345px
-      left: 312px
-      margin: 0 auto
+    +transition(all .3s ease-out)
+    &:hover
+      z-index: 10
+    &:before,
+    &:after
+      content: ''
+      +coverdiv
+      background-color: inherit
+    &:before
+      +transform(skewX(30deg))
+      left: -83px
+    &:after
+      +transform(skewX(-30deg))
+      right: -83px
+      left: auto
+    &--center
+      width: 566px
+      height: 326px
+      top: 510px
+      left: 304px
       background-color: #00712d
+      line-height: 332px
+      &:hover
+        +transform(scale(1.25))
       &:before,
       &:after
         content: ''
-        width: 572px
-        height: 332px
         +coverdiv
-        background-color: #00712d
+        background-color: inherit
       &:before
         +rotate(60)
       &:after
         +rotate(-60)
-  &__link
-    font-size: 0
-    line-height: 288px
-    color: #fff
-    text-transform: uppercase
-    &--6angle
-      line-height: 332px
-    &:hover
-      color: #fff
-      text-decoration: none
+    &--1
+      top: 146px
+      left: 200px
+      +rotate(-30)
+      background-color: #cd0053
+      &:hover
+        +transform(rotate(-30deg) scale(1.25))
+    &--2
+      top: 148px
+      left: 646px
+      +rotate(30)
+      background-color: #ea7917
+      &:hover
+        +transform(rotate(30deg) scale(1.25))
+    &--3
+      top: 530px
+      left: -24px
+      +rotate(-90)
+      background-color: #ecb500
+      &:hover
+        +transform(rotate(-90deg) scale(1.25))
+    &--4
+      top: 531px
+      left: 869px
+      +rotate(90)
+      background-color: #ca0426
+      &:hover
+        +transform(rotate(90deg) scale(1.25))
+    &--5
+      top: 921px
+      left: 200px
+      +rotate(210)
+      background-color: #8d2a78
+      &:hover
+        +transform(rotate(210deg) scale(1.25))
+    &--6
+      top: 921px
+      left: 646px
+      +rotate(-210)
+      background-color: #35a4af
+      &:hover
+        +transform(rotate(-210deg) scale(1.25))
   &__text
     position: relative
+    display: inline-block
+    vertical-align: middle
+    width: 135%
+    left: -60px
+    right: -60px
+    font: 600 40px/50px sans-serif
+    text-transform: uppercase
+    overflow: hidden
+    word-wrap: break-word
     z-index: 9
-    font-size: 40px
-    line-height: 40px
+    &--center
+      width: auto
+      left: auto
+      right: auto
+    &--1
+      font-size: 61px
+      line-height: 61px
+    &--2
+    &--3
+    &--4
+    &--5,
+    &--6
+      +rotate(180)
