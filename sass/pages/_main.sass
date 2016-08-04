@@ -2,3 +2,53 @@
 +ic
 
 +comment("home page style")
+
+.navbar-poly
+  position: relative
+  width: 1184px
+  height: 1356px
+  margin: 
+    top: 117px
+    bottom: 117px
+  
+  &__item
+    position: absolute
+    font-size: 40px
+    line-height: 40px
+    text-align: center
+    &--trapeze
+      width: 672px
+      height: 288px
+    &--6angle
+      width: 572px
+      height: 332px
+      top: 345px
+      left: 312px
+      margin: 0 auto
+      background-color: #00712d
+      &:before,
+      &:after
+        content: ''
+        width: 572px
+        height: 332px
+        +coverdiv
+        background-color: #00712d
+      &:before
+        +rotate(60)
+      &:after
+        +rotate(-60)
+  &__link
+    font-size: 0
+    line-height: 288px
+    color: #fff
+    text-transform: uppercase
+    &--6angle
+      line-height: 332px
+    &:hover
+      color: #fff
+      text-decoration: none
+  &__text
+    position: relative
+    z-index: 9
+    font-size: 40px
+    line-height: 40px
