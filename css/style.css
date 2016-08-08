@@ -117,10 +117,12 @@
 /* ---------------------------------------- */
 .navbar-poly {
   position: relative;
-  width: 414.4px;
-  height: 474.6px;
+  width: 1184px;
+  height: 1356px;
   margin-top: 117px;
   margin-bottom: 117px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navbar-poly__link {
   color: #fff;
