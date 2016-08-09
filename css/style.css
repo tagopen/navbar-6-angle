@@ -145,9 +145,6 @@
   -ms-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.navbar-poly__item:hover {
-  z-index: 10;
-}
 .navbar-poly__item:before, .navbar-poly__item:after {
   content: "";
   position: absolute;
@@ -222,6 +219,7 @@
   -ms-transform: rotate(-30deg) scale(1.25);
   -o-transform: rotate(-30deg) scale(1.25);
   transform: rotate(-30deg) scale(1.25);
+  z-index: 10;
 }
 .navbar-poly__item--2 {
   top: 148px;
@@ -237,6 +235,7 @@
   -ms-transform: rotate(30deg) scale(1.25);
   -o-transform: rotate(30deg) scale(1.25);
   transform: rotate(30deg) scale(1.25);
+  z-index: 10;
 }
 .navbar-poly__item--3 {
   top: 530px;
@@ -252,6 +251,7 @@
   -ms-transform: rotate(-90deg) scale(1.25);
   -o-transform: rotate(-90deg) scale(1.25);
   transform: rotate(-90deg) scale(1.25);
+  z-index: 10;
 }
 .navbar-poly__item--4 {
   top: 531px;
@@ -267,6 +267,7 @@
   -ms-transform: rotate(90deg) scale(1.25);
   -o-transform: rotate(90deg) scale(1.25);
   transform: rotate(90deg) scale(1.25);
+  z-index: 10;
 }
 .navbar-poly__item--5 {
   top: 921px;
@@ -282,6 +283,7 @@
   -ms-transform: rotate(210deg) scale(1.25);
   -o-transform: rotate(210deg) scale(1.25);
   transform: rotate(210deg) scale(1.25);
+  z-index: 10;
 }
 .navbar-poly__item--6 {
   top: 921px;
@@ -297,6 +299,7 @@
   -ms-transform: rotate(-210deg) scale(1.25);
   -o-transform: rotate(-210deg) scale(1.25);
   transform: rotate(-210deg) scale(1.25);
+  z-index: 10;
 }
 .navbar-poly__text {
   position: relative;
